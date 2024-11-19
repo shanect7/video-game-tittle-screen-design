@@ -36,6 +36,11 @@ For starters, you'll be learning how to code a simple functional title screen of
 
 // TBD on if it's actually gonna be funcitoning 
 
+## Objective
+
+Use HTML links, images, headers, and CSS styling to match the final image of this video game's title screen:
+![image](https://github.com/user-attachments/assets/e79f6df3-dd36-4ea1-b59f-48439d11b2db)
+
 ## Project Structure
 
 // Still need to adjust this 
