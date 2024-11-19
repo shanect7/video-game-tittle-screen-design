@@ -6,7 +6,9 @@ Love video games? Hopefully you said yes because today's guide will guide you th
 
 ## Table of Contents
 
-// Anything up to this point has NOT been worked on yet
+// Anything after this point has NOT been worked on yet
+
+// The table of contents has not been updated at all; change later
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
@@ -23,6 +25,12 @@ Love video games? Hopefully you said yes because today's guide will guide you th
 ## Introduction
 
 In this tutorial, you'll learn how to create a simple website with an HTML structure, styled with CSS, and interactivity added using JavaScript. By the end of this guide, you will have a basic understanding of how these three technologies work together to create a functional webpage.
+
+For starters, you'll be learning how to code a simple functional title screen of the popular blocky video game (not Roblox), Minecraft! With the use of simple HTML structure and CSS styling, you'll be able to create a functioning title screen
+
+// May need to mention: By the end, if you'd like, feel free to replace the images with your own or from the internet to create another video game title screen you like. (or perhaps even a video game of your own)
+
+// TBD on if it's actually gonna be funcitoning 
 
 ## Project Structure
 
