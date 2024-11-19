@@ -1,10 +1,12 @@
-# hello-world-test
+# video-game-title-sceen-design
 
-## Simple Website Tutorial
+## Video Game Title Screen Tutorial
 
-Welcome to the Simple Website Tutorial! This guide will walk you through the steps to create a basic website using HTML, CSS, and JavaScript.
+Love video games? Hopefully you said yes because today's guide will guide you through the process of designing your own video game title screen.
 
 ## Table of Contents
+
+// Anything up to this point has NOT been worked on yet
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
