@@ -38,8 +38,10 @@ For starters, you'll be learning how to code a simple functional title screen of
 
 ## Objective
 
-Use HTML links, images, headers, and CSS styling to match the final image of this video game's title screen:
+Use HTML links, images, headers, and CSS styling to match the final image of Minecraft's 2010 title screen:
 ![image](https://github.com/user-attachments/assets/e79f6df3-dd36-4ea1-b59f-48439d11b2db)
+
+[Need to replace eventually; js a proof of concept for what it'll look like] 
 
 ## Project Structure
 
