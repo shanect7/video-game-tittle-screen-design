@@ -4,6 +4,11 @@
 
 Love video games? Hopefully you said yes because today's guide will guide you through the process of designing your own video game title screen.
 
+## Objective
+
+Use HTML links, images, headers, and CSS styling to match the final image of this video game's title screen:
+(INSERT IMAGE LATER) 
+
 ## Table of Contents
 
 // Anything after this point has NOT been worked on yet
