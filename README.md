@@ -4,11 +4,6 @@
 
 Love video games? Hopefully you said yes because today's guide will guide you through the process of designing your own video game title screen.
 
-## Objective
-
-Use HTML links, images, headers, and CSS styling to match the final image of this video game's title screen:
-(INSERT IMAGE LATER) 
-
 ## Table of Contents
 
 // Anything after this point has NOT been worked on yet
@@ -26,6 +21,10 @@ Use HTML links, images, headers, and CSS styling to match the final image of thi
   - [5. Open the HTML File in a Browser](#5-open-the-html-file-in-a-browser)
 - [Things to Look Out For](#things-to-look-out-for)
 - [Conclusion](#conclusion)
+
+// idea A: You know that text that minecraft usually has? Can create design for that (to which they can write whatever text they want for that) 
+
+// idea B: Can use Alpha Minecraft title screen or Beta Minecraft 
 
 ## Introduction
 
@@ -56,7 +55,7 @@ If now, you can copy and paste the "assets" folders from above into your repel/p
 
 ## Step-by-Step Guide
 
-### 1. Create the HTML File
+### 1. Create and position the game title
 
 Open your code editor and create a file named `index.html`. Add the following code:
 
