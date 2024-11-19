@@ -1,4 +1,4 @@
-# video-game-title-sceen-design
+# video-game-title-screen-design
 
 ## Video Game Title Screen Tutorial
 
@@ -39,6 +39,8 @@ For starters, you'll be learning how to code a simple functional title screen of
 
 ## Project Structure
 
+// Still need to adjust this 
+
 Create a project directory and set up the following file structure:
 ```plaintext
 simple-website/
@@ -46,6 +48,11 @@ simple-website/
 ├── styles.css
 └── script.js
 ```
+## Before starting...
+
+Make sure that you have a folder/directory named "assets." This folder will have the images of all the buttons and backgrounds needed to design this title screen.
+
+If now, you can copy and paste the "assets" folders from above into your repel/program.
 
 ## Step-by-Step Guide
 
