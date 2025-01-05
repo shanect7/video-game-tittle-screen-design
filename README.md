@@ -10,13 +10,22 @@ In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better
 ## Step 1: The Background and Title
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
 
-Now, in `styles.css` we will be using the 'bg' class to showcase our background image. 
+Now, in `styles.css` we will be using the 'bg' class to showcase our background image. Within this class, we will be using the following format to alter the class and add a background-image
 
+We will be starting with this:
 ```
-test
+.bg {
 
+}
+```
 
-Answer: (Remove Later)
+Note: The class 'bg' is a 'div' made in `index.html` to style in css
+
+To add our background, we will have to use the `background-image` property within the 'bg' class.
+
+Once that is completed, you will find that the background looks off, sort of like this:
+
+Answer: (Will remove once students see this, just here for my use)
 ```
 /* the .bg refers to the 'bg' div in index.html*/
   .bg {
@@ -31,3 +40,4 @@ Answer: (Remove Later)
     background-size: cover;
     background-repeat: no-repeat;
   }
+```
