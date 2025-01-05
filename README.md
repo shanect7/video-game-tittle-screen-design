@@ -27,6 +27,7 @@ Once that is completed, you will find that the background looks off, sort of lik
 ![image](https://github.com/user-attachments/assets/733d269a-1e66-4884-b28a-375e0efb1a3a)
 
 Unfortunately though, most players aren't typically satisfied with seeing only half the title and background screen, which means more work for us. So, to this fix this, we will be using the following CSS properties:
+
 `background-position:` 
 This property determines the position of the background image.
 
