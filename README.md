@@ -41,7 +41,7 @@ To make sure the background image fits across the entire scene, we'd like to use
 `background-repeat:` 
 This property determines if a background image should repeat over and over again across the screen. (This is more visible within immages that are small) 
 
-While our background image will likely not repeat, it would still be good to ensure it doesn't. Luckily, a property for <ins>**no repeat**</ins>ing does exist.
+While our background image will likely not repeat, it would still be good to ensure it doesn't. Luckily, a property for <ins>**no-repeat**</ins>ing does exist.
 
 To fix this, 
 Answer: (Will remove once students see this, just here for my use)
