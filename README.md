@@ -62,3 +62,7 @@ Answer: (Will remove once students see this, just here for my use)
     background-repeat: no-repeat;
   }
 ```
+
+## Step 2: The Buttons
+With 
+
