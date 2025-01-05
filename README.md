@@ -10,8 +10,24 @@ In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better
 ## Step 1: The Background and Title
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
 
-So, in `styles.css`
+Now, in `styles.css` we will be using the 'bg' class to showcase our background image. 
 
 ```
 test
+
+
+Answer: (Remove Later)
 ```
+/* the .bg refers to the 'bg' div in index.html*/
+  .bg {
+    /* The image used */
+    background-image: url('minecraft-assets/minecraft_background_with_title.png');
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
