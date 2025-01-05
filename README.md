@@ -19,13 +19,30 @@ We will be starting with this:
 }
 ```
 
-Note: The class 'bg' is a 'div' made in `index.html` to style in css
+Note: The class 'bg' is a 'div' made in `index.html` to style in CSS
 
 To add our background, we will have to use the `background-image` property within the 'bg' class.
 
 Once that is completed, you will find that the background looks off, sort of like this:
 ![image](https://github.com/user-attachments/assets/733d269a-1e66-4884-b28a-375e0efb1a3a)
 
+Unfortunately though, most players aren't typically satisfied with seeing only half the title and background screen, which means more work for us. So, to this fix this, we will be using the following CSS properties:
+`background-position:` 
+This property determines the position of the background image.
+
+For our title screen, it'd be ideal to use a property to **center** it on the screen.
+
+`background-size:`
+This property determines the size of the background image. 
+
+To make sure the background image fits across the entire scene, we'd like to use a background-size property that **cover**s the entire screen.
+
+`background-repeat:` 
+This property determines if a background image should repeat over and over again across the screen. (This is more visible within immages that are small) 
+
+While our background image will likely not repeat, it would still be good to ensure it doesn't. Luckily, a property for **no repeat**ing does exist.
+
+To fix this, 
 Answer: (Will remove once students see this, just here for my use)
 ```
 /* the .bg refers to the 'bg' div in index.html*/
