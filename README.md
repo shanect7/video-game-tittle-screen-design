@@ -24,6 +24,7 @@ Note: The class 'bg' is a 'div' made in `index.html` to style in css
 To add our background, we will have to use the `background-image` property within the 'bg' class.
 
 Once that is completed, you will find that the background looks off, sort of like this:
+![image](https://github.com/user-attachments/assets/733d269a-1e66-4884-b28a-375e0efb1a3a)
 
 Answer: (Will remove once students see this, just here for my use)
 ```
