@@ -31,17 +31,17 @@ Unfortunately though, most players aren't typically satisfied with seeing only h
 `background-position:` 
 This property determines the position of the background image.
 
-For our title screen, it'd be ideal to use a property to __**center**__ it on the screen.
+For our title screen, it'd be ideal to use a property to <ins>**center**</ins> it on the screen.
 
 `background-size:`
 This property determines the size of the background image. 
 
-To make sure the background image fits across the entire scene, we'd like to use a background-size property that __**cover**__s the entire screen.
+To make sure the background image fits across the entire scene, we'd like to use a background-size property that <ins>**cover**</ins>s the entire screen.
 
 `background-repeat:` 
 This property determines if a background image should repeat over and over again across the screen. (This is more visible within immages that are small) 
 
-While our background image will likely not repeat, it would still be good to ensure it doesn't. Luckily, a property for __**no repeat**__ing does exist.
+While our background image will likely not repeat, it would still be good to ensure it doesn't. Luckily, a property for <ins>**no repeat**</ins>ing does exist.
 
 To fix this, 
 Answer: (Will remove once students see this, just here for my use)
