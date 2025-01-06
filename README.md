@@ -130,8 +130,10 @@ The divisions should have the following images:
 
 Note: For the title screen to look right, the images must be added in this order 
 
+When you have completed all that, you will be left with a title screen that looks like this:
+![image](https://github.com/user-attachments/assets/4c3e31aa-f665-46af-a17d-fbc2d8e1a7b8)
 
-
+For a game that (seriously) costs $30, most players would expect a much cleaner and organized main menu screen, so let's fix this up!
 
 [Remove later]
 HTML Answer:
