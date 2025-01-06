@@ -27,10 +27,14 @@ We will be starting with this:
 ```
 .bg {
 
+    /* flex container for child elements (AKA: the buttons) */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 ```
 
-Note: The class 'bg' is a 'div' made in `index.html` to style in CSS
+Note: The code already in there will be used later to create our buttons
 
 To add our background, we will have to use the `background-image` property within the 'bg' class.
 
