@@ -95,6 +95,33 @@ It should look something like this
 </body>
 ```
 
+Now that we have our divisions set up, we will not be inputting some images inside these divisions that represent our buttons, all inside 'index.html'
+
+With the use of the <img> HTML tag, we will be using the images within the 'minecraft-assets' folder to set up our button images. 
+
+To help you out, one example of the use of the <img> tag within our code will look like this:
+```
+  <img src="minecraft-assets/singleplayer_button.png" alt="Singleplayer Button">
+```
+
+The <img> tag requires showing the path to the image we want to use, which happens to be in the minecraft-assets folder. In addition to that, the <img> tag allows you have to alternative text, designated by: `alt="[text here]"` that will be shown if your picture doesn't show up. The use of the alt. text is useful, especially when debugging your code, as it shows up when the code itself works but the image itself is not showing up. 
+
+With all that in mind, please place images under the proper division. 
+
+The divisions should have the following images:
+**Center Buttons:**
+• Singleplayer Button
+• Multiplayer Button
+• Minecraft Realms Button
+
+**Bottom Buttons:**
+• Language Button
+• Options Button
+• Quit Button
+• Accessibility Button
+
+Note: For the title screen to look right, the images must be added in this order 
+
 
 
 
