@@ -16,12 +16,12 @@ Such should look like this:
 
 ```
 <body>
-    <div class="bg">
-    </div>
+  <div class="bg">
+  </div>
 </body>
 ```
 
-Now, in `styles.css` we will be using the 'bg' class to showcase our background image. Within this class, we will be using the following format to alter the class and add a background-image
+With that done, we will now be going into `styles.css` to use 'bg' class to showcase our background image. Within this class, we will be using the following format to alter the class and add a background-image
 
 We will be starting with this:
 ```
