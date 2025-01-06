@@ -144,12 +144,22 @@ In `styles.css` we will be styling the "center_buttons" class first. With that i
 
 Once that is done, then, inside the selector (or the curly braces), type ``display: flex;``. Such will tell our buttons that we'll be using the flexbox model to organize it. 
 
-With that done, we will have to use our knowledge of the flexbox model to <ins>**center**</ins> and place the buttons in a <ins>**column**</ins> format. 
+Since these buttons have spacing between them, you'll also want to use the ``gap`` property. Within the selector (or curly braces) also type ``gap: 10px;``
+
+With that done, we will then have to use our knowledge of the flexbox model to <ins>**center**</ins> and place the buttons in a <ins>**column**</ins> format. 
 
 Once you have figured that out, you should be left with a main menu screen that looks like this:
 
 ![image](https://github.com/user-attachments/assets/66ab24ef-d59c-434d-92fd-08ee382f5a1b)
 
+We're almost done! With that completed, we will now be doing the same thing for the "bottom_buttons." Create another selector using the bottom_buttons class:
+```
+.bottom_buttons {
+
+}
+```
+
+Bonus Activity (AKA: Stretch Goal)
 
 [Remove later]
 HTML Answer:
