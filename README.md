@@ -79,7 +79,23 @@ Answer: (Will remove once students see this, just here for my use)
 ```
 
 ## Step 2: The Buttons
-With 
+With our background and title now created, we will now be focusing on the creation of our buttons.
+
+Starting off with 'index.html' again, we will be using the <div> HTML tag to create two new divisions with classes named "center_buttons" and "bottom_buttons" within the division with the class name "bg."
+
+It should look something like this
+```
+<body>
+  <div class="bg">
+      <div class="center_buttons">
+      </div>
+      <div class="bottom_buttons">
+      </div>
+  </div>
+</body>
+```
+
+
 
 
 [Remove later]
