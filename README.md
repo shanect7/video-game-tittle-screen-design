@@ -16,7 +16,7 @@ Such should look like this:
 
 ```
 <body>
-    <div class="center_buttons">
+    <div class="bg">
     </div>
 </body>
 ```
