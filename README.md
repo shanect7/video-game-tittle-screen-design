@@ -109,15 +109,23 @@ The `<img>` tag requires showing the path to the image we want to use, which hap
 With all that in mind, please place images under the proper division. 
 
 The divisions should have the following images:
+
 **Center Buttons:**
+
 • Singleplayer Button
+
 • Multiplayer Button
+
 • Minecraft Realms Button
 
 **Bottom Buttons:**
+
 • Language Button
+
 • Options Button
+
 • Quit Button
+
 • Accessibility Button
 
 Note: For the title screen to look right, the images must be added in this order 
