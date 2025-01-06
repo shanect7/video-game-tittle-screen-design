@@ -95,7 +95,7 @@ It should look something like this
 </body>
 ```
 
-Now that we have our divisions set up, we will not be inputting some images inside these divisions that represent our buttons, all inside 'index.html'
+Now that we have our divisions set up, we will now be inputting some images inside these divisions that represent our buttons, all inside 'index.html'
 
 With the use of the `<img>` HTML tag, we will be using the images within the 'minecraft-assets' folder to set up our button images. 
 
