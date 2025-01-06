@@ -66,3 +66,68 @@ Answer: (Will remove once students see this, just here for my use)
 ## Step 2: The Buttons
 With 
 
+
+[Remove later]
+HTML Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Minecraft Main Menu</title>
+  </head>
+<body>
+  <div class="bg">
+    <div class="center_buttons">
+      <img src="minecraft-assets/singleplayer_button.png" alt="Singleplayer Button">
+      <img src="minecraft-assets/multiplayer_button.png" alt="Multiplayer Button">
+      <img src="minecraft-assets/minecraft_realms_button.png" alt="Minecraft Realms Button">
+      </div>
+    <div class="bottom_buttons">
+      <img src="minecraft-assets/language_button.png" alt="Language Button">
+      <img src="minecraft-assets/options_button.png" alt="Options Button">
+      <img src="minecraft-assets/quit_button.png" alt="Quit Button">
+      <img src="minecraft-assets/accessibility_button.png" alt="Accessibility Button">
+    </div>
+  </div>
+</body>
+</html>
+
+CSS Answer:
+body, html {
+    margin: 0;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+  }
+  /* Leave the above on top*/
+  
+  /* the .bg refers to the 'bg' div in index.html*/
+  .bg {
+    background-image: url('minecraft-assets/minecraft_background_with_title.png');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+
+    /* Flex container for child elements */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .center_buttons {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 10px; 
+}   
+
+/* Note: align-items: row not needed for images automatically placed in a row */
+
+.bottom_buttons {
+  display: flex; 
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 10px;
+}   
+
