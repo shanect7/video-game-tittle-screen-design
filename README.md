@@ -152,12 +152,23 @@ Once you have figured that out, you should be left with a main menu screen that 
 
 ![image](https://github.com/user-attachments/assets/66ab24ef-d59c-434d-92fd-08ee382f5a1b)
 
-We're almost done! With that completed, we will now be doing the same thing for the "bottom_buttons." Create another selector using the bottom_buttons class:
+We're almost done! With that completed, we will now be doing the same thing for the "bottom_buttons." Create another selector using the bottom_buttons class. Also, like the center_buttons, you'll need to establish a flexbox model, a gap, and now a new property called ``margin-top.``
+
+The following should look like this:
 ```
 .bottom_buttons {
-
+  display: flex; 
+  gap: 10px; 
+  margin-top: 40px;
 }
 ```
+
+With that all written, you must now consider what else about this flexbox model must be changed to <ins>**center**</ins> the buttons. 
+
+And with that, we should have our final product, that being something like this!
+![image](https://github.com/user-attachments/assets/05b57169-bd56-4a0b-94c9-a5a5a755b2d3)
+
+
 
 Bonus Activity (AKA: Stretch Goal)
 
