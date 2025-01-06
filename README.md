@@ -135,6 +135,22 @@ When you have completed all that, you will be left with a title screen that look
 
 For a game that (seriously) costs $30, most players would expect a much cleaner and organized main menu screen, so let's fix this up!
 
+In `styles.css` we will be styling the "center_buttons" class first. With that in mind, start by creating the selector:
+```
+.center_buttons {
+
+}
+```
+
+Once that is done, then, inside the selector (or the curly braces), type ``display: flex;``. Such will tell our buttons that we'll be using the flexbox model to organize it. 
+
+With that done, we will have to use our knowledge of the flexbox model to <ins>**center**</ins> and place the buttons in a <ins>**column**</ins> format. 
+
+Once you have figured that out, you should be left with a main menu screen that looks like this:
+
+![image](https://github.com/user-attachments/assets/66ab24ef-d59c-434d-92fd-08ee382f5a1b)
+
+
 [Remove later]
 HTML Answer:
 <!DOCTYPE html>
