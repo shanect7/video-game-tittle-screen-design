@@ -61,23 +61,6 @@ While our background image will likely not repeat, it would still be good to ens
 With all those properties in place, we will be left with the following:
 ![image](https://github.com/user-attachments/assets/e713ab5a-827c-441a-98eb-543d8a3e5286)
 
-Answer: (Will remove once students see this, just here for my use)
-```
-/* the .bg refers to the 'bg' div in index.html*/
-  .bg {
-    /* The image used */
-    background-image: url('minecraft-assets/minecraft_background_with_title.png');
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-```
-
 ## Section 2: The Buttons
 With our background and title now created, we will now be focusing on the creation of our buttons.
 
@@ -173,11 +156,11 @@ NOTE: This is optional! (I will be showing you something you have not learned ye
 
 On the main menu of Minecraft you'll notice that flashing yellow text right by the title. Such text is called "splash text."
 
-In order to recreate this we will create a `<div>` within the `<div>` with the class named 'bg.' And, then within this new `<div` you will then use the `<p>` tag to create your own custom text.
+In order to recreate this we will create a `<div>` called "splash_text" within the `<div>` with the class named 'bg.' And, then within this new `<div>` you will then use the `<p>` tag to create your own custom text.
 ```
 <body>
   <div class="bg">
-      <div class="text">
+      <div class="splash_text">
       </div>
       <div class="center_buttons">
         ...
@@ -192,9 +175,15 @@ In order to recreate this we will create a `<div>` within the `<div>` with the c
 You will then end up with something like this:
 ![image](https://github.com/user-attachments/assets/d0f361e3-e1ac-4ebe-9eb2-fdc89bd7d80c)
 
-With our text now created, we should then head to `styles.css` Within our CSS, we will start by importing a custom font to match the real Minecraft menu. With the use of a CSS at-rule (AKA: statement that instructs how the CSS should behave)
+With our text now created, we should then head to `styles.css` Within our CSS, we will start by importing a custom font to match the real Minecraft menu. With the use of a CSS at-rule (AKA: @ statements that instructs how the CSS should behave), @font-face will display a custom font with the use of:
 
-Within our CSS, you should paste the following: (ideally, under the code you've made earlier) 
+`font-family:`
+Specifies a list of fonts to use. 
+
+Inside font-family, within the use of quotation marks, it will designate a name to your own custom font. 
+[More info. on font-family here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+
+Within our CSS, you should type out the following: (ideally, under the code you've made earlier) 
 ```
   @font-face {
     font-family: 'minecraftregular';
@@ -204,68 +193,91 @@ Within our CSS, you should paste the following: (ideally, under the code you've 
 
 (For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
 
+Following that, with the use of the "splash_text" class, we will now apply this custom font to our text, like shown below: 
+```
+.splash_text {
+  font-family: 'minecraftregular', sans-serif;
+}
+```
 
-[Remove later]
-HTML Answer:
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Minecraft Main Menu</title>
-  </head>
-<body>
-  <div class="bg">
-    <div class="center_buttons">
-      <img src="minecraft-assets/singleplayer_button.png" alt="Singleplayer Button">
-      <img src="minecraft-assets/multiplayer_button.png" alt="Multiplayer Button">
-      <img src="minecraft-assets/minecraft_realms_button.png" alt="Minecraft Realms Button">
-      </div>
-    <div class="bottom_buttons">
-      <img src="minecraft-assets/language_button.png" alt="Language Button">
-      <img src="minecraft-assets/options_button.png" alt="Options Button">
-      <img src="minecraft-assets/quit_button.png" alt="Quit Button">
-      <img src="minecraft-assets/accessibility_button.png" alt="Accessibility Button">
-    </div>
-  </div>
-</body>
-</html>
+As you can see their a comma placed in between our custom font and sans-serif. We do this in order to have a back-up font in case our custom font doesn't work. Like a list, the displayed font prioritizes from first to last font (left to right in this case). If the first font fails to display, it will move on to the font on its right. 
 
-CSS Answer:
-body, html {
-    margin: 0;
-    height: 100%; 
-    display: flex; 
-    flex-direction: column;
+With that now completed, we will now focus on the size of this font. In order to change the size of this text, we will now use `font-size` which is based on pixels. 
+[More info. on font-size here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
+
+Should look like this:
+```
+.splash_text {
+  font-family: 'minecraftregular', sans-serif;
+  font-size: 30px;
+}
+```
+
+We will also now add a new color and text-shadow to our splash text.
+
+In order to do this, we will use:
+
+`color`
+
+AND
+
+`text-shadow`
+
+Such property can hold up to four values, as designated below:
+```
+text-shadow: offset-x, offset-y, blur-radius, color */
+```
+
+The offsets will adjust position of the shadow horizontally (x) and vertically (y) while the blur-radius, adjusts how blurry the shadow is. 
+
+In our case though, we will not be using the blur-radius value, so we will omit that in our final code. 
+
+All in all, it should look like this:
+```
+.splash_text {
+  font-family: 'minecraftregular', sans-serif;
+  font-size: 30px;
+  color:#fafd11;
+  text-shadow: 1px 2px #463903;
+}
+```
+
+With that all completed, we will now be altering the position and animation of the text. Since this is all complex, please use the following properties and juse use the code listed below:
+
+`position`
+`animation`
+`top`
+`left`
+`@keyframes`
+`transform`
+
+```
+.splash_text {
+  font-family: 'minecraftregular', sans-serif;
+  font-size: 30px;
+  color:#fafd11;
+  text-shadow: 1px 2px #463903;
+  position:absolute;
+  animation:text .5s linear infinite normal;
+  top: 60px;
+  left: 800px;
+  /* transform rotate will affect position */
+}
+
+top: 125px;
+left: 828px;
+@keyframes text {
+  0% {
+    transform:scale(1) rotate(-30deg);
   }
-  /* Leave the above on top*/
-  
-  /* the .bg refers to the 'bg' div in index.html*/
-  .bg {
-    background-image: url('minecraft-assets/minecraft_background_with_title.png');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
-
-    /* Flex container for child elements */
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
+  50% {
+    transform:scale(0.9) rotate(-30deg);
   }
+  100% {
+    transform:scale(1) rotate(-30deg);
+  }
+}
+```
 
-  .center_buttons {
-    display: flex; 
-    align-items: center;
-    flex-direction: column;
-    gap: 10px; 
-}   
-
-/* Note: align-items: row not needed for images automatically placed in a row */
-
-.bottom_buttons {
-  display: flex; 
-  justify-content: center;
-  gap: 10px; 
-  margin-top: 40px;
-}   
+And with that, we have our final main menu screen!
 
