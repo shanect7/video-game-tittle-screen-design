@@ -7,7 +7,7 @@ In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better
 ![image](https://github.com/user-attachments/assets/05b57169-bd56-4a0b-94c9-a5a5a755b2d3)
 (May change image later) 
 
-## Step 1: The Background and Title
+## Section 1: The Background and Title
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
 
 Starting in 'index.html' we will be creating a division, or section, to "hold" our background image. With the `<div>` tag, we will be creating it with the class "bg" inside the body element.
@@ -78,7 +78,7 @@ Answer: (Will remove once students see this, just here for my use)
   }
 ```
 
-## Step 2: The Buttons
+## Section 2: The Buttons
 With our background and title now created, we will now be focusing on the creation of our buttons.
 
 Starting off with 'index.html' again, we will be using the `<div>` HTML tag to create two new divisions with classes named "center_buttons" and "bottom_buttons" within the division with the class name "bg."
@@ -168,9 +168,9 @@ With that all written, you must now consider what else about this flexbox model 
 And with that, we should have our final product, that being something like this!
 ![image](https://github.com/user-attachments/assets/05b57169-bd56-4a0b-94c9-a5a5a755b2d3)
 
+## (Stretch Goal) Section 3: Animated Text
+NOTE: This is optional! (I will be showing you something you have not learned yet) 
 
-
-Bonus Activity (AKA: Stretch Goal)
 
 [Remove later]
 HTML Answer:
