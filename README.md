@@ -173,10 +173,21 @@ NOTE: This is optional! (I will be showing you something you have not learned ye
 
 On the main menu of Minecraft you'll notice that flashing yellow text right by the title. Such text is called "splash text."
 
-In order to recreate this we will create a `<div>` within the `<div>` with the class named 'bg'
-``
-e
-``
+In order to recreate this we will create a `<div>` within the `<div>` with the class named 'bg.' And, then within this new `<div` you will then use the `<p>` tag to create your own custom text.
+```
+<body>
+  <div class="bg">
+      <div class="text">
+      </div>
+      <div class="center_buttons">
+        ...
+      </div>
+      <div class="bottom_buttons">
+        ...
+      </div>
+  </div>
+</body>
+```
 
 [Remove later]
 HTML Answer:
