@@ -202,7 +202,7 @@ Within our CSS, you should paste the following: (ideally, under the code you've 
 }
 ```
 
-(For more information on @font-face, consider this [website]([url](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
+(For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
 
 
 [Remove later]
