@@ -1,0 +1,14 @@
+body, html {
+    margin: 0;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+  }
+
+ .bg {
+
+    /* flex container for child elements (AKA: the buttons) */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+  }
