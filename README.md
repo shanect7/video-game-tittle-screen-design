@@ -6,7 +6,8 @@ In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better
 
 ![image](https://github.com/user-attachments/assets/05b57169-bd56-4a0b-94c9-a5a5a755b2d3)
 (May change image later) 
-![image](https://github.com/user-attachments/assets/82ec5229-cc59-4311-b6e0-92babbc5a4cc)
+![](https://github.com/video-game-tittle-screen-design/Your_GIF_Name.gif)
+
 
 ## Section 1: The Background and Title
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
