@@ -171,6 +171,12 @@ And with that, we should have our final product, that being something like this!
 ## (Stretch Goal) Section 3: Animated Text
 NOTE: This is optional! (I will be showing you something you have not learned yet) 
 
+On the main menu of Minecraft you'll notice that flashing yellow text right by the title. Such text is called "splash text."
+
+In order to recreate this we will create a `<div>` within the `<div>` with the class named 'bg'
+``
+e
+``
 
 [Remove later]
 HTML Answer:
