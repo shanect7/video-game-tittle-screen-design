@@ -189,6 +189,22 @@ In order to recreate this we will create a `<div>` within the `<div>` with the c
 </body>
 ```
 
+You will then end up with something like this:
+![image](https://github.com/user-attachments/assets/d0f361e3-e1ac-4ebe-9eb2-fdc89bd7d80c)
+
+With our text now created, we should then head to `styles.css` Within our CSS, we will start by importing a custom font to match the real Minecraft menu. With the use of a CSS at-rule (AKA: statement that instructs how the CSS should behave)
+
+Within our CSS, you should paste the following: (ideally, under the code you've made earlier) 
+```
+  @font-face {
+    font-family: 'minecraftregular';
+    src: url('https://fonts.cdnfonts.com/s/25041/1_MinecraftRegular1.woff') format('woff');
+}
+```
+
+(For more information on @font-face, consider this [website]([url](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
+
+
 [Remove later]
 HTML Answer:
 <!DOCTYPE html>
