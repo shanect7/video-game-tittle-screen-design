@@ -4,9 +4,7 @@
 
 In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better edition) title screen with actual Minecraft assets 
 
-![image](https://github.com/user-attachments/assets/05b57169-bd56-4a0b-94c9-a5a5a755b2d3)
-(May change image later) 
-![](https://github.com/video-game-tittle-screen-design/custom_designed_final_menu.gif) 
+![](https://github.com/shanect7/video-game-tittle-screen-design/blob/main/custom_designed_final_menu.gif)
 
 
 ## Section 1: The Background and Title
