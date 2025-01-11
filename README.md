@@ -6,6 +6,7 @@ In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better
 
 ![image](https://github.com/user-attachments/assets/05b57169-bd56-4a0b-94c9-a5a5a755b2d3)
 (May change image later) 
+<iframe src="https://giphy.com/embed/F1Vc5ku6NAuDRSOd6b" width="480" height="302" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/F1Vc5ku6NAuDRSOd6b">via GIPHY</a></p>
 
 ## Section 1: The Background and Title
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
