@@ -192,9 +192,9 @@ Within our CSS, you should type out the following: (ideally, under the code you'
 
 (For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
 
-Following that, with the use of the "splash_text" class, we will now apply this custom font to our text, like shown below: 
+Following that, with the use of the "splash_text" ID, we will now apply this custom font to our text, like shown below: 
 ```
-.splash_text {
+#splash_text {
   font-family: 'minecraftregular', sans-serif;
 }
 ```
@@ -206,7 +206,7 @@ With that now completed, we will now focus on the size of this font. In order to
 
 Should look like this:
 ```
-.splash_text {
+#splash_text {
   font-family: 'minecraftregular', sans-serif;
   font-size: 30px;
 }
@@ -233,7 +233,7 @@ In our case though, we will not be using the blur-radius value, so we will omit 
 
 All in all, it should look like this:
 ```
-.splash_text {
+#splash_text {
   font-family: 'minecraftregular', sans-serif;
   font-size: 30px;
   color:#fafd11;
@@ -251,7 +251,7 @@ With that all completed, we will now be altering the position and animation of t
 `transform`
 
 ```
-.splash_text {
+#splash_text {
   font-family: 'minecraftregular', sans-serif;
   font-size: 30px;
   color:#fafd11;
