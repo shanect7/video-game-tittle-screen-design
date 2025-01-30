@@ -174,7 +174,7 @@ In order to recreate this, under the `<div>` tag named 'bg,' we will attach an I
 You will then end up with something like this:
 ![image](https://github.com/user-attachments/assets/d0f361e3-e1ac-4ebe-9eb2-fdc89bd7d80c)
 
-With our text now created, we should then head to `styles.css` Within our CSS, we will start by importing a custom font to match the real Minecraft menu. With the use of a CSS at-rule (AKA: @ statements that instructs how the CSS should behave), @font-face will display a custom font with the use of:
+With our text now created, we should then head to `styles.css` Within our CSS, we will start by importing a custom font to match the real Minecraft menu. With the use of a CSS at-rule (AKA: @ statements that instruct how the CSS should behave), @font-face will display a custom font with the use of:
 
 `font-family:`
 Specifies a list of fonts to use. 
@@ -182,7 +182,7 @@ Specifies a list of fonts to use.
 Inside font-family, within the use of quotation marks, it will designate a name to your own custom font. 
 [More info. on font-family here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
 
-Within our CSS, you should type out the following: (ideally, under the code you've made earlier) 
+Within our CSS, you should type out the following: (ideally, under the code you made earlier) 
 ```
   @font-face {
     font-family: 'minecraftregular';
@@ -192,16 +192,16 @@ Within our CSS, you should type out the following: (ideally, under the code you'
 
 (For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
 
-Following that, with the use of the "splash_text" ID, we will now apply this custom font to our text, like shown below: 
+Following that, with the use of the "splash_text" ID, we will now apply this custom font to our text, as shown below: 
 ```
 #splash_text {
   font-family: 'minecraftregular', sans-serif;
 }
 ```
 
-As you can see their a comma placed in between our custom font and sans-serif. We do this in order to have a back-up font in case our custom font doesn't work. Like a list, the displayed font prioritizes from first to last font (left to right in this case). If the first font fails to display, it will move on to the font on its right. 
+As you can see their a comma placed in between our custom font and sans-serif. We do this in order to have a backup font in case our custom font doesn't work. Like a list, the displayed font prioritizes from first to last font (left to right in this case). If the first font fails to display, it will move on to the font on its right. 
 
-With that now completed, we will now focus on the size of this font. In order to change the size of this text, we will now use `font-size` which is based on pixels. 
+With that now completed, we will now focus on the size of this font. In order to change the size of this text, we will now use `font-size` which is based on pixels. In this case, we will set the size of the font to **30 pixels**.
 [More info. on font-size here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
 
 Should look like this:
@@ -224,10 +224,10 @@ AND
 
 Such property can hold up to four values, as designated below:
 ```
-text-shadow: offset-x, offset-y, blur-radius, color */
+text-shadow: offset-x, offset-y, blur-radius, color;
 ```
 
-The offsets will adjust position of the shadow horizontally (x) and vertically (y) while the blur-radius, adjusts how blurry the shadow is. 
+The offsets will adjust the position of the shadow horizontally (x) and vertically (y) while the blur-radius, adjusts how blurry the shadow is. 
 
 In our case though, we will not be using the blur-radius value, so we will omit that in our final code. 
 
