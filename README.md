@@ -2,6 +2,7 @@
 
 ## Table of Contents
 1. [What are we doing?](##what-are-we-doing?)
+2. [Section 1: The Background and Title](##Section-1:-The-Background-and-Title)
 
 ## What are we doing?
 
