@@ -156,7 +156,7 @@ NOTE: This is optional! (I will be showing you something you have not learned ye
 
 On the main menu of Minecraft you'll notice that flashing yellow text right by the title. Such text is called "splash text."
 
-In order to recreate this we will attach an ID named 'bg' to the `<p>` tag to create your own custom text.
+In order to recreate this, under the `<div>` tag named 'bg,' we will attach an ID named 'splash_text' to the `<p>` tag to create your own custom text.
 ```
 <body>
   <div id="bg">
