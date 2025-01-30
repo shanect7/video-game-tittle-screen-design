@@ -1,5 +1,8 @@
 # Video Game Title Screen
 
+## Table of Contents
+1. What are we doing?(#What are we doing?)
+
 ## What are we doing?
 
 In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better edition) title screen with actual Minecraft assets 
