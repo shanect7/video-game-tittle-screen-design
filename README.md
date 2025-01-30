@@ -10,22 +10,22 @@ In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better
 ## Section 1: The Background and Title
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
 
-Starting in 'index.html' we will be creating a division, or section, to "hold" our background image. With the `<div>` tag, we will be creating it with the class "bg" inside the body element.
+Starting in 'index.html' we will be creating a division, or section, to "hold" our background image. With the `<div>` tag, we will be creating it with the ID "bg" inside the body element.
 
 Such should look like this:
 
 ```
 <body>
-  <div class="bg">
+  <div id="bg">
   </div>
 </body>
 ```
 
-With that done, we will now be going into `styles.css` to use 'bg' class to showcase our background image. Within this class, we will be using the following format to alter the class and add a background-image
+With that done, we will now be going into `styles.css` to use 'bg' ID to showcase our background image. Within this ID selector, we will be using the following format to alter the id and add a background-image
 
 We will be starting with this:
 ```
-.bg {
+#bg {
 
     /* flex container for child elements (AKA: the buttons) */
     display: flex; 
@@ -36,7 +36,7 @@ We will be starting with this:
 
 Note: The code already in there will be used later to create our buttons
 
-To add our background, we will have to use the `background-image` property within the 'bg' class.
+To add our background, we will have to use the `background-image` property within the 'bg' ID.
 
 Once that is completed, you will find that the background looks off, sort of like this:
 ![image](https://github.com/user-attachments/assets/733d269a-1e66-4884-b28a-375e0efb1a3a)
@@ -64,15 +64,15 @@ With all those properties in place, we will be left with the following:
 ## Section 2: The Buttons
 With our background and title now created, we will now be focusing on the creation of our buttons.
 
-Starting off with 'index.html' again, we will be using the `<div>` HTML tag to create two new divisions with classes named "center_buttons" and "bottom_buttons" within the division with the class name "bg."
+Starting off with 'index.html' again, we will be using the `<div>` HTML tag to create two new divisions with IDs named "center_buttons" and "bottom_buttons" within the division with the ID name "bg."
 
 It should look something like this
 ```
 <body>
-  <div class="bg">
-      <div class="center_buttons">
+  <div id="bg">
+      <div id="center_buttons">
       </div>
-      <div class="bottom_buttons">
+      <div id="bottom_buttons">
       </div>
   </div>
 </body>
@@ -118,9 +118,9 @@ When you have completed all that, you will be left with a title screen that look
 
 For a game that (seriously) costs $30, most players would expect a much cleaner and more organized main menu screen, so let's fix this up!
 
-In `styles.css` we will be styling the "center_buttons" class first. With that in mind, start by creating the selector:
+In `styles.css` we will be styling the "center_buttons" ID first. With that in mind, start by creating the selector:
 ```
-.center_buttons {
+#center_buttons {
 
 }
 ```
