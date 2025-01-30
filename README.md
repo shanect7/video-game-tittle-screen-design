@@ -1,7 +1,8 @@
 # Video Game Title Screen
 
 ## Table of Contents
-1. [Custom foo description](#foo)
+1. [#hat are we doing?](#What are we doing?)
+)
 
 ## What are we doing?
 
