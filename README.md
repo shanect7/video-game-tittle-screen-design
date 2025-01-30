@@ -6,14 +6,14 @@
 3. [Section 2: The Buttons](##section-2:-the-buttons)
 4. [(Stretch Goal) Section 3: Animated Text](##(stretch-goal)-section-3:-animated-text)
 
-## What are we doing?
+## [What are we doing?]
 
 In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better edition) title screen with actual Minecraft assets 
 
 ![](https://github.com/shanect7/video-game-tittle-screen-design/blob/main/custom_designed_final_menu.gif)
 
 
-## Section 1: The Background and Title
+## [Section 1: The Background and Title]
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
 
 Starting in 'index.html' we will be creating a division, or section, to "hold" our background image. With the `<div>` tag, we will be creating it with the ID "bg" inside the body element.
