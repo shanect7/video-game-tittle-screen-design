@@ -135,11 +135,11 @@ Once you have figured that out, you should be left with a main menu screen that 
 
 ![image](https://github.com/user-attachments/assets/66ab24ef-d59c-434d-92fd-08ee382f5a1b)
 
-We're almost done! With that completed, we will now be doing the same thing for the "bottom_buttons." Create another selector using the bottom_buttons class. Also, like the center_buttons, you'll need to establish a flexbox model, a gap, and now a new property called ``margin-top.``
+We're almost done! With that completed, we will now be doing the same thing for the "bottom_buttons." Create another selector using the bottom_buttons ID. Also, like the center_buttons, you'll need to establish a flexbox model, a gap, and now a new property called ``margin-top.``
 
 The following should look like this:
 ```
-.bottom_buttons {
+#bottom_buttons {
   display: flex; 
   gap: 10px; 
   margin-top: 40px;
@@ -156,16 +156,15 @@ NOTE: This is optional! (I will be showing you something you have not learned ye
 
 On the main menu of Minecraft you'll notice that flashing yellow text right by the title. Such text is called "splash text."
 
-In order to recreate this we will create a `<div>` called "splash_text" within the `<div>` with the class named 'bg.' And, then within this new `<div>` you will then use the `<p>` tag to create your own custom text.
+In order to recreate this we will attach an ID named 'bg' to the `<p>` tag to create your own custom text.
 ```
 <body>
-  <div class="bg">
-      <div class="splash_text">
-      </div>
-      <div class="center_buttons">
+  <div id="bg">
+      <p id='bg'> ADD YOUR OWN TEXT HERE </p>
+      <div id="center_buttons">
         ...
       </div>
-      <div class="bottom_buttons">
+      <div id="bottom_buttons">
         ...
       </div>
   </div>
