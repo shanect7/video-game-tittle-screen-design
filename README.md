@@ -2,9 +2,9 @@
 
 ## Table of Contents
 1. [What are we doing?](#what-are-we-doing)
-2. [Section 1: The Background and Title](#section-1:-the-background-and-title)
+2. [Section 1: The Background and Title](#section-1-the-background-and-title)
 3. [Section 2: The Buttons](#section-2:the-buttons)
-4. [(Stretch Goal) Section 3: Animated Text](##(stretch-goal)-section-3:-animated-text)
+4. [(Stretch Goal) Section 3: Animated Text](#(stretch-goal)-section-3-animated-text)
 
 ## What are we doing?
 
@@ -13,7 +13,7 @@ In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better
 ![](https://github.com/shanect7/video-game-tittle-screen-design/blob/main/custom_designed_final_menu.gif)
 
 
-## [Section 1: The Background and Title]
+## Section 1: The Background and Title
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
 
 Starting in 'index.html' we will be creating a division, or section, to "hold" our background image. With the `<div>` tag, we will be creating it with the ID "bg" inside the body element.
