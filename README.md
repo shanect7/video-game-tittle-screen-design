@@ -1,8 +1,7 @@
 # Video Game Title Screen
 
 ## Table of Contents
-1. [#hat are we doing?](#What are we doing?)
-)
+1. [#what are we doing?](#What are we doing?)
 
 ## What are we doing?
 
