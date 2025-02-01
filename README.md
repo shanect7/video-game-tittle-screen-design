@@ -205,12 +205,12 @@ Following that, with the use of the "splash_text" ID, we will now apply this cus
 }
 ```
 
-As you can see their a comma placed in between our custom font and sans-serif. We do this in order to have a backup font in case our custom font doesn't work. Like a list, the displayed font prioritizes from first to last font (left to right in this case). If the first font fails to display, it will move on to the font on its right. 
+As you can see there, a comma placed in between our custom font and sans-serif. We do this in order to have a backup font in case our custom font doesn't work. Like a list, the displayed font prioritizes from first to last font (left to right in this case). If the first font fails to display, it will move on to the font on its right. 
 
 With that now completed, we will now focus on the size of this font. In order to change the size of this text, we will now use `font-size` which is based on pixels. In this case, we will set the size of the font to **30 pixels**.
 [More info. on font-size here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
 
-Should look like this:
+With that in mind, your code should look like this:
 ```
 #splash_text {
   font-family: 'minecraftregular', sans-serif;
@@ -224,11 +224,15 @@ In order to do this, we will use:
 
 `color`
 
+In order to set a color, we will be using **hex** color codes to use a specific color. In this case, we will be using the hex color code: **#fafd11**
+
+If you'd like to see which hex color codes are associated with every color, [click here](https://g.co/kgs/G5t99bA) or search up "color picker" on Google. 
+
 AND
 
 `text-shadow`
 
-Such property can hold up to four values, as designated below:
+The `text-shadow` property can hold up to four values, as designated below:
 ```
 text-shadow: offset-x, offset-y, blur-radius, color;
 ```
@@ -237,7 +241,10 @@ The offsets will adjust the position of the shadow horizontally (x) and vertical
 
 In our case though, we will not be using the blur-radius value, so we will omit that in our final code. 
 
-All in all, it should look like this:
+All in all, our `text-shadow` property should include values for our offset-x, offset-y, and color as follows: 1px 2px #463903.
+
+
+With these properties in mind, inside our `splash-text` ID selector should be:
 ```
 #splash_text {
   font-family: 'minecraftregular', sans-serif;
@@ -247,7 +254,7 @@ All in all, it should look like this:
 }
 ```
 
-With that all completed, we will now be altering the position and animation of the text. Since this is all complex, please use the following properties and juse use the code listed below:
+With that all completed, we will now be altering the position and animation of the text. Since this is all complex, please use the following properties and just use the code listed below:
 
 `position`
 `animation`
