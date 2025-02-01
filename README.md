@@ -258,7 +258,25 @@ With that all completed, we will now be altering the position of the text. In or
 `top`
 `left`
 
-Starting with the `position` property, we will be applying the **absolute** value. By making the position of the text absolute, we will be able to place the text wherever we want on the screen without being affected by the other elements. (In other words, think of it like a **magnet on a fridge.** Even if there are sticky notes, pictures, or other magnets on the fridge, you can still freely place that magnet anywhere on that fridge without it being pushed by anything else. In fact, you could even place the magnets on top of those items.)
+Starting with the `position` property, which describes the position method type, we will be applying the **absolute** value. 
+
+By making the position of the text absolute, we will be able to place the text wherever we want on the screen without being affected by the other elements. (In other words, think of it like a **magnet on a fridge.** Even if there are sticky notes, pictures, or other magnets on the fridge, you can still freely place that magnet anywhere on that fridge without it being pushed by anything else. In fact, you could even place the magnets on top of those items.)
+
+Following that, we will be using the `top` and `left` property. The `left` property will position the text horizontally by placing the text however many pixels from the left edge of the screen. The `top` property will position the text vertically via however many pixels from the top edge of the screen. 
+
+On my screen, the following values worked:
+
+```
+#splash_text {
+  ...
+  top: 60px;
+  left: 800px;
+}
+```
+
+**BUT, since every screen is different, feel free to try out various pixel values until it's by the bottom-right of the title screen.**
+
+By the end, your code should look like this:
 ```
 #splash_text {
   font-family: 'minecraftregular', sans-serif;
@@ -266,14 +284,10 @@ Starting with the `position` property, we will be applying the **absolute** valu
   color:#fafd11;
   text-shadow: 1px 2px #463903;
   position:absolute;
-  animation:text .5s linear infinite normal;
   top: 60px;
   left: 800px;
-  /* transform rotate will affect position */
 }
 
-top: 125px;
-left: 828px;
 @keyframes text {
   0% {
     transform:scale(1) rotate(-30deg);
