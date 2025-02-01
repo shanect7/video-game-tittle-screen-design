@@ -252,15 +252,13 @@ With these properties in mind, inside our 'splash-text' ID selector should be:
 }
 ```
 
-With that all completed, we will now be altering the position and animation of the text. Since this is all complex, please use the following properties and just use the code listed below:
+With that all completed, we will now be altering the position of the text. In order to do this, we will be using the following properties:
 
 `position`
-`animation`
 `top`
 `left`
-`@keyframes`
-`transform`
 
+Starting with the `position` property, we will be applying the **absolute** value. By making the position of the text absolute, we will be able to place the text wherever we want on the screen without being affected by the other elements. (In other words, think of it like a **magnet on a fridge.** Even if there are sticky notes, pictures, or other magnets on the fridge, you can still freely place that magnet anywhere on that fridge without it being pushed by anything else. In fact, you could even place the magnets on top of those items.)
 ```
 #splash_text {
   font-family: 'minecraftregular', sans-serif;
