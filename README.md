@@ -55,7 +55,7 @@ If we just add the images directly to the body, it looks...
 
 ![](demo/clutter.png)
 
-not so great...
+like a game that wouldn't (seriously) cost $30.
 
 In order to fix this, let's group all of our images into a divider! Create a ```div``` tag and put all of our images inside it.
 
@@ -101,13 +101,14 @@ Now we can target it specifically in the CSS, by adding a ```#``` symbol before 
 ![](demo/too_big.png)
 
 Uh oh, now our buttons are too big again, so it's time to use dividers once more!
+
 Looking at our reference again...
 
 ![](demo/goal.png)
 
 It looks like we can divide these buttons into two groups: The <u>top</u> and <u>bottom</u> buttons. Let's divide them by using two dividers, two ```div``` elements. Give the first div the ID <u>top</u>, and the second div the ID <u>bottom</u>.
 
-Inside the top div, put the
+Inside the top div, put these:
 - Singleplayer
 - Multiplayer
 - Minecraft Realms
@@ -173,6 +174,9 @@ We're going to import the Minecraft font into our CSS. Paste this code into an e
   src: url('https://fonts.cdnfonts.com/s/25041/1_MinecraftRegular1.woff') format('woff');
 }
 ```
+
+The previous code is called the CSS @font-face rule. If you'd like to learn more, consider [this link](https://www.w3schools.com/cssref/atrule_font-face.php)
+
 Next, target your ```p``` element using it's ID "splash" and change it's ```font-family``` to ```'minecraftregular'```. This should give our text the minecraft font:
 
 ![](demo/minecraftText.png)
@@ -189,7 +193,7 @@ Add a text shadow to the text by using the text shadow property. The `text-shado
 text-shadow: offset-x, offset-y, blur-radius, color;
 ```
 
-The offsets will adjust the position of the shadow horizontally (x) and vertically (y) while the blur-radius, adjusts how blurry the shadow is.  In our case though, we will not be using the blur-radius value, so we will omit that in our final code. 
+The offsets will adjust the position of the shadow horizontally (x) and vertically (y) while the blur-radius, adjusts how blurry the shadow is.  In our case though, we will not be using the blur-radius value, so we will not include that in our final code. 
 
 All in all, these should be the properties of our splash text element:
 
@@ -250,6 +254,8 @@ Add this property to your text element:
 ```
 animation: text 2s infinite;
 ```
+
+Animations will be one of your final lessons, but in case you wanted to learn more about animations, consider looking at [this link](https://www.w3schools.com/css/css3_animations.asp).
 
 And hopefully your website should be complete!
 
