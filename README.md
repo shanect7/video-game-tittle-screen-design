@@ -217,6 +217,9 @@ With that in mind, your code should look like this:
 }
 ```
 
+With our font and font-size now loaded in, our text should look like the following:
+![image](https://github.com/user-attachments/assets/4ee01ceb-0e82-4bec-9812-d11982ccfa44)
+
 We will also now add a new color and text-shadow to our splash text.
 
 In order to do this, we will use:
@@ -252,6 +255,9 @@ With these properties in mind, inside our 'splash-text' ID selector should be:
 }
 ```
 
+By the end of that, it should look like something like this: 
+![image](https://github.com/user-attachments/assets/d96f35ae-9e89-4386-af5a-3ecff6a46456)
+
 With that all completed, we will now be altering the position of the text. In order to do this, we will be using the following properties:
 
 `position`
@@ -260,22 +266,25 @@ With that all completed, we will now be altering the position of the text. In or
 
 Starting with the `position` property, which describes the position method type, we will be applying the **absolute** value. 
 
+For more information on position property, consider looking at [this link](https://www.w3schools.com/cssref/pr_class_position.php).
+
 By making the position of the text absolute, we will be able to place the text wherever we want on the screen without being affected by the other elements. (In other words, think of it like a **magnet on a fridge.** Even if there are sticky notes, pictures, or other magnets on the fridge, you can still freely place that magnet anywhere on that fridge without it being pushed by anything else. In fact, you could even place the magnets on top of those items.)
 
-Following that, we will be using the `top` and `left` property. The `left` property will position the text horizontally by placing the text however many pixels from the left edge of the screen. The `top` property will position the text vertically via however many pixels from the top edge of the screen. 
+Following that, we will be using the `top` and `left` properties. The `left` property will position the text horizontally by placing the text however many pixels from the left edge of the screen. The `top` property will position the text vertically via however many pixels from the top edge of the screen. 
 
 On my screen, the following values worked:
 
 ```
 #splash_text {
   ...
-  top: 60px;
   left: 800px;
+  top: 60px;
 }
 ```
 
 **BUT, since every screen is different, feel free to try out various pixel values until it's by the bottom-right of the title screen.**
 
+For more information on the left property, consider clicking [think link](https://www.w3schools.com/cssref/pr_pos_left.php). As for the top property, consider looking at [this link](w3schools.com/cssref/pr_pos_top.php).
 By the end, your code should look like this:
 ```
 #splash_text {
@@ -284,8 +293,8 @@ By the end, your code should look like this:
   color:#fafd11;
   text-shadow: 1px 2px #463903;
   position:absolute;
-  top: 60px;
   left: 800px;
+  top: 60px;
 }
 
 @keyframes text {
