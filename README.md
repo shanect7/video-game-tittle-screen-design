@@ -4,265 +4,209 @@
 1. [What are we doing?](#what-are-we-doing)
 2. [Section 1: The Background and Title](#section-1-the-background-and-title)
 3. [Section 2: The Buttons](#section-2-the-buttons)
-4. [(Stretch Goal) Section 3: Animated Text](#stretch-goal-section-3-animated-text)
+4. [Section 3: Flexbox](#section-3-flexbox)
+5. [(Stretch Goal) Section 4: Animated Text](#stretch-goal-section-4-animated-text)
 
 ## What are we doing?
 
 In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better edition) title screen with actual Minecraft assets.
-![](https://github.com/shanect7/video-game-tittle-screen-design/blob/main/custom_designed_final_menu.gif)
+
+![](demo/final.gif)
 
 
 ## Section 1: The Background and Title
 To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it.)
 
-Starting in 'index.html' we will be creating a division, or section, to "hold" our background image. With the `<div>` tag, we will be creating it with the ID "bg" inside the body element.
+Head over to style.css and create a new line targeting the ```body``` element. We'll use the ```background-image``` property to add ```minecraft_background_with_title.png``` to it.
 
-Such should look like this:
+__*NOTE:*__ When using file paths in CSS, you have to put the file path inside a ```url``` tag, like this:
 
 ```
-<body>
-  <div id="bg">
-  </div>
-</body>
+background-image: url("folder/image.png");
 ```
 
-With that done, we will now be going into `styles.css` to use 'bg' ID to showcase our background image. Within this ID selector, we will be using the following format to alter the id and add a background-image.
+When we add this property to our HTML's body, we should get the background to look something like this:
 
-We will be starting with this:
-```
-#bg {
+![](demo/zoomed_in.png)
 
-    /* flex container for child elements (AKA: the buttons) */
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-}
-```
+There are a couple more useful background image properties to help perfect our website's background.
 
-Note: The code already in there will be used later to create our buttons
-
-To add our background, we will have to use the `background-image` property within the 'bg' ID.
-
-Once that is completed, you will find that the background looks off, sort of like this:
-![image](https://github.com/user-attachments/assets/733d269a-1e66-4884-b28a-375e0efb1a3a)
-
-Unfortunately though, most players wouldn't be satisfied with seeing only half the title and background screen, which means more work for us. So, to fix this, we will be using the following CSS properties:
-
-`background-position:` 
-This property determines the position of the background image.
-
-For our title screen, it'd be ideal to use a property to <ins>**center**</ins> it on the screen.
-
-`background-size:`
-This property determines the size of the background image. 
-
-To make sure the background image fits across the entire scene, we'd like to use a background-size property that <ins>**cover**</ins>s the entire screen.
-
-`background-repeat:` 
-This property determines if a background image should repeat over and over again across the screen. (This is more visible with images that are small) 
-
-While our background image will likely not repeat, it would still be good to ensure it doesn't. Luckily, a property for <ins>**no-repeat**</ins>ing does exist.
-
-With all those properties in place, we will be left with the following:
-![image](https://github.com/user-attachments/assets/e713ab5a-827c-441a-98eb-543d8a3e5286)
+- ```background-position: center;```
+  - This centers our image and makes it stay the same size no matter how big the window is.
+- ```background-size: cover;```
+  - This makes the image cover the entire screen.
+- ```background-repeat: no-repeat;```
+  - If our image is too small, it might repeat itself over and over again to fill up the page. This makes sure it doesn't repeat, so only one image will be part of the background.
 
 ## Section 2: The Buttons
 With our background and title now created, we will now be focusing on the creation of our buttons.
 
-Starting off with 'index.html' again, we will be using the `<div>` HTML tag to create two new divisions with IDs named "center_buttons" and "bottom_buttons" within the division with the ID name "bg."
+Let's add the button images inside the ```body``` of our HTML. We'll use the ```img``` to add in order...
 
-It should look something like this
+1. Singleplayer
+2. Multiplayer
+3. Realms
+4. Language
+5. Options
+6. Quit
+7. Accessibility
+
+If we just add the images directly to the body, it looks...
+
+![](demo/clutter.png)
+
+not so great...
+
+In order to fix this, let's group all of our images into a divider! Create a ```div``` tag and put all of our images inside it.
+
 ```
-<body>
-  <div id="bg">
-      <div id="center_buttons">
-      </div>
-      <div id="bottom_buttons">
-      </div>
-  </div>
-</body>
+<div>
+    <img src="/minecraft-assets/singleplayer_button.png" alt="">
+    <img src="/minecraft-assets/multiplayer_button.png" alt="">
+    ...
+    ...
+</div>
 ```
 
-Now that we have our divisions set up, we will now be inputting some images inside these divisions that represent our buttons, all inside 'index.html'
+![](demo/div.png)
 
-With the use of the `<img>` HTML tag, we will be using the images within the 'minecraft-assets' folder to set up our button images. 
+Much better, although we want to make it look like this!
 
-To help you out, one example of the use of the `<img>` tag within our code will look like this:
+![](demo/goal.png)
+
+We need to do this by using **Flexbox!**
+
+## Section 3: Flexbox
+
+First of all, let's order the buttons from top to bottom. Using flexbox, we can target the divider that holds all the buttons, and ```flex-direction: column;``` should do the trick. First of all, let's give the ```div``` holding all our images the ID **"images"** so we can target it specifically.
+
 ```
-  <img src="minecraft-assets/singleplayer_button.png" alt="Singleplayer Button">
+<div id="images">
+  <img src="/minecraft-assets/singleplayer_button.png" alt="">
+  <img src="/minecraft-assets/multiplayer_button.png" alt="">
+  ...
+  ...
+</div>
 ```
 
-The `<img>` tag requires showing the path to the image we want to use, which happens to be in the minecraft-assets folder. In addition to that, the `<img>` tag allows you have to alternative text, designated by: `alt="[text here]"` that will be shown if your picture doesn't show up. The use of the alt. text is useful, especially when debugging your code, as it shows up when the code itself works but the image itself is not showing up. 
+Now we can target it specifically in the CSS, by adding a ```#``` symbol before saying the ID. Let's give this div the ```display: flex;``` property first to activate flexbox on it, then give it the ```flex-direction``` property.
 
-With all that in mind, please place images under the proper division. 
-
-The divisions should have the following images:
-
-**Center Buttons:**
-
-• Singleplayer Button
-
-• Multiplayer Button
-
-• Minecraft Realms Button
-
-**Bottom Buttons:**
-
-• Language Button
-
-• Options Button
-
-• Quit Button
-
-• Accessibility Button
-
-Note: For the title screen to look right, the images must be added in this order 
-
-When you have completed all that, you will be left with a title screen that looks like this:
-![image](https://github.com/user-attachments/assets/4c3e31aa-f665-46af-a17d-fbc2d8e1a7b8)
-
-For a game that (seriously) costs $30, most players would expect a much cleaner and more organized main menu screen, so let's fix this up!
-
-In `styles.css` we will be styling the "center_buttons" ID first. With that in mind, start by creating the selector:
 ```
-#center_buttons {
-
+#images {
+  display: flex;
+  flex-direction: column;
 }
 ```
 
-Once that is done, then, inside the selector (or the curly braces), type ``display: flex;``. Such will tell our buttons that we'll be using the flexbox model to organize it. 
+![](demo/too_big.png)
 
-Since these buttons have spacing between them, you'll also want to use the ``gap`` property. Within the selector (or curly braces) also type ``gap: 10px;``
+Uh oh, now our buttons are too big again, so it's time to use dividers once more!
+Looking at our reference again...
 
-With that done, we will then have to use our knowledge of the flexbox model to <ins>**center**</ins> and place the buttons in a <ins>**column**</ins> format. 
+![](demo/goal.png)
 
-Once you have figured that out, you should be left with a main menu screen that looks like this:
+It looks like we can divide these buttons into two groups: The <u>top</u> and <u>bottom</u> buttons. Let's divide them by using two dividers, two ```div``` elements. Give the first div the ID <u>top</u>, and the second div the ID <u>bottom</u>.
 
-![image](https://github.com/user-attachments/assets/66ab24ef-d59c-434d-92fd-08ee382f5a1b)
+Inside the top div, put the
+- Singleplayer
+- Multiplayer
+- Minecraft Realms
 
-We're almost done! With that completed, we will now be doing the same thing for the "bottom_buttons." Create another selector using the bottom_buttons ID. Also, like the center_buttons, you'll need to establish a flexbox model, a gap, and now a new property called ``margin-top.``
-
-The following should look like this:
+images in. Put the other four buttons in the bottom divider. Here's a hint on how it should look:
 ```
-#bottom_buttons {
-  display: flex; 
-  gap: 10px; 
-  margin-top: 40px;
-}
+<div id="images">
+    <div id="top">
+      <img src="/minecraft-assets/singleplayer_button.png" alt="">
+      ...
+      ...
+    </div>
+    <div id="bottom">
+      <img src="/minecraft-assets/language_button.png" alt="">
+      ...
+      ...
+    </div>
+</div>
 ```
 
-With that all written, you must now consider what else about this flexbox model must be changed to <ins>**center**</ins> the buttons. 
+We should be back to something normal again:
 
-And with that, we should have our final product, that being something like this!
-![image](https://github.com/user-attachments/assets/05b57169-bd56-4a0b-94c9-a5a5a755b2d3)
+![](demo/normalcy.png)
 
-## (Stretch Goal) Section 3: Animated Text
+Now it's up to you to use Flexbox in order to position the buttons in the right places! You should use Flexbox with both the <u>top</u> and <u>bottom</u> dividers in order to accomplish this. Here are a few useful flexbox properties to help you out:
+
+- ```display: flex;```
+  - Enables Flexbox
+- ```margin-top: 100px;```
+  - Creates an invisible margin at the top, pushing your content downwards.
+- ```margin-left: 100px;```
+  - Creates an invisible margin at the left, pushing your content to the right.
+- ```gap: 10px;```
+  - Creates some space between each element in the divider.
+- ```justify-content: center```
+  - Centers the items horizontally.
+- ```flex-direction: column;```
+  - Lines up the items into a column, from up to down.
+- ```align-items: center;```
+  - Centers the items vertically. Can affect sizing.
+
+![](demo/goal.png)
+
+## (Stretch Goal) Section 4: Animated Text
 NOTE: This is optional! (I will be showing you something you have not learned yet) 
 
 On the main menu of Minecraft you'll notice that flashing yellow text right by the title. Such text is called "splash text."
 
-In order to recreate this, under the `<div>` tag named 'bg,' we will attach an ID named 'splash_text' to the `<p>` tag to create your own custom text.
+We'll recreate this by adding a ```p``` tag underneath our ```div``` with the ```images``` ID. Give this ```p``` element the ID ```splash```.
+
 ```
-<body>
-  <div id="bg">
-      <p id='bg'> ADD YOUR OWN TEXT HERE </p>
-      <div id="center_buttons">
-        ...
-      </div>
-      <div id="bottom_buttons">
-        ...
-      </div>
-  </div>
-</body>
+  <div id="images">
+    <p id="splash">Also try Terraria!</p>
+    <div id="top">
+    ...
 ```
 
-You will then end up with something like this:
-![image](https://github.com/user-attachments/assets/d0f361e3-e1ac-4ebe-9eb2-fdc89bd7d80c)
+We're going to import the Minecraft font into our CSS. Paste this code into an empty area in your CSS to import it:
 
-With our text now created, we should then head to `styles.css` Within our CSS, we will start by importing a custom font to match the real Minecraft menu. With the use of a CSS at-rule (AKA: @ statements that instruct how the CSS should behave), @font-face will display a custom font with the use of:
-
-`font-family:`
-Specifies a list of fonts to use. 
-
-Inside font-family, within the use of quotation marks, it will designate a name to your own custom font. 
-[More info. on font-family here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
-
-Within our CSS, you should type out the following: (ideally, under the code you made earlier) 
 ```
-  @font-face {
-    font-family: 'minecraftregular';
-    src: url('https://fonts.cdnfonts.com/s/25041/1_MinecraftRegular1.woff') format('woff');
+@font-face {
+  font-family: 'minecraftregular';
+  src: url('https://fonts.cdnfonts.com/s/25041/1_MinecraftRegular1.woff') format('woff');
 }
 ```
+Next, target your ```p``` element using it's ID "splash" and change it's ```font-family``` to ```'minecraftregular'```. This should give our text the minecraft font:
 
-For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).
+![](demo/minecraftText.png)
 
-Following that, with the use of the "splash_text" ID, we will now apply this custom font to our text, as shown below: 
-```
-#splash_text {
-  font-family: 'minecraftregular', sans-serif;
-}
-```
-
-As you can see there, a comma placed in between our custom font and sans-serif. We do this in order to have a backup font in case our custom font doesn't work. Like a list, the displayed font prioritizes from first to last font (left to right in this case). If the first font fails to display, it will move on to the font on its right. 
+**_NOTE:_** After typing the font family of your choosing, add a comma and write ```sans-serif```, which is another font. This will be a backup font in case the first font is unable to load.
 
 With that now completed, we will now focus on the size of this font. In order to change the size of this text, we will now use `font-size` which is based on pixels. In this case, we will set the size of the font to **30 pixels**.
-[More info. on font-size here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size).
+[More info on font-size here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size).
 
-With that in mind, your code should look like this:
-```
-#splash_text {
-  font-family: 'minecraftregular', sans-serif;
-  font-size: 30px;
-}
-```
+Next, change the color of the text to **hex** color code **#fafd11**.
 
-With our font and font-size now loaded in, our text should look like the following:
-![image](https://github.com/user-attachments/assets/4ee01ceb-0e82-4bec-9812-d11982ccfa44)
-
-We will also now add a new color and text-shadow to our splash text.
-
-In order to do this, we will use:
-
-`color`
-
-In order to set a color, we will be using **hex** color codes to use a specific color. In this case, we will be using the hex color code: **#fafd11**
-
-If you'd like to see which hex color codes are associated with every color, [click here](https://g.co/kgs/G5t99bA) or search up "color picker" on Google. 
-
-AND
-
-`text-shadow`
-
-The `text-shadow` property can hold up to four values, as designated below:
+Add a text shadow to the text by using the text shadow property. The `text-shadow` property can hold up to four values, as designated below:
 ```
 text-shadow: offset-x, offset-y, blur-radius, color;
 ```
 
-The offsets will adjust the position of the shadow horizontally (x) and vertically (y) while the blur-radius, adjusts how blurry the shadow is. 
+The offsets will adjust the position of the shadow horizontally (x) and vertically (y) while the blur-radius, adjusts how blurry the shadow is.  In our case though, we will not be using the blur-radius value, so we will omit that in our final code. 
 
-In our case though, we will not be using the blur-radius value, so we will omit that in our final code. 
+All in all, these should be the properties of our splash text element:
 
-All in all, our `text-shadow` property should include values for our offset-x, offset-y, and color as follows: 1px 2px #463903.
-
-With these properties in mind, inside our 'splash-text' ID selector should be:
 ```
-#splash_text {
-  font-family: 'minecraftregular', sans-serif;
-  font-size: 30px;
-  color:#fafd11;
-  text-shadow: 1px 2px #463903;
-}
+font-family: 'minecraftregular', sans-serif;
+font-size: 30px;
+color: #fafd11;
+text-shadow: 1px 2px #463903;
 ```
 
-By the end of that, it should look like something like this: 
-![image](https://github.com/user-attachments/assets/d96f35ae-9e89-4386-af5a-3ecff6a46456)
+![](demo/coolText.png)
 
 With that all completed, we will now be altering the position of the text. In order to do this, we will be using the following properties:
 
-`position`
-`top`
-`left`
+- `position`
+- `top`
+- `left`
 
 Starting with the `position` property, which describes the position method type, we will be applying the **absolute** value. 
 
@@ -277,6 +221,7 @@ On my screen, the following values worked:
 ```
 #splash_text {
   ...
+  position: absolute;
   left: 800px;
   top: 60px;
 }
@@ -284,19 +229,9 @@ On my screen, the following values worked:
 
 **BUT, since every screen is different, feel free to try out various pixel values until it's by the bottom-right of the title screen.**
 
-For more information on the left property, consider clicking [think link](https://www.w3schools.com/cssref/pr_pos_left.php). As for the top property, consider looking at [this link](w3schools.com/cssref/pr_pos_top.php).
-By the end, your code should look like this:
-```
-#splash_text {
-  font-family: 'minecraftregular', sans-serif;
-  font-size: 30px;
-  color:#fafd11;
-  text-shadow: 1px 2px #463903;
-  position:absolute;
-  left: 800px;
-  top: 60px;
-}
+Finally, let's animate the splash text. Add this bunch of code someone empty in your CSS file:
 
+```
 @keyframes text {
   0% {
     transform:scale(1) rotate(-30deg);
@@ -310,5 +245,12 @@ By the end, your code should look like this:
 }
 ```
 
-And with that, we have our final main menu screen!
+Add this property to your text element:
 
+```
+animation: text 2s infinite;
+```
+
+And hopefully your website should be complete!
+
+![](demo/final.gif)
