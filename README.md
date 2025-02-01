@@ -195,7 +195,7 @@ Within our CSS, you should type out the following: (ideally, under the code you 
 }
 ```
 
-(For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).
+For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).
 
 Following that, with the use of the "splash_text" ID, we will now apply this custom font to our text, as shown below: 
 ```
