@@ -8,13 +8,12 @@
 
 ## What are we doing?
 
-In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better edition) title screen with actual Minecraft assets 
-
+In this project, we'll be rebuilding the Minecraft Java Edition (AKA: the better edition) title screen with actual Minecraft assets.
 ![](https://github.com/shanect7/video-game-tittle-screen-design/blob/main/custom_designed_final_menu.gif)
 
 
 ## Section 1: The Background and Title
-To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it)
+To start off, we will be uploading one of Minecraft's title screen background images. (And, to make it easier for ourselves, it will already have the title on it.)
 
 Starting in 'index.html' we will be creating a division, or section, to "hold" our background image. With the `<div>` tag, we will be creating it with the ID "bg" inside the body element.
 
@@ -27,7 +26,7 @@ Such should look like this:
 </body>
 ```
 
-With that done, we will now be going into `styles.css` to use 'bg' ID to showcase our background image. Within this ID selector, we will be using the following format to alter the id and add a background-image
+With that done, we will now be going into `styles.css` to use 'bg' ID to showcase our background image. Within this ID selector, we will be using the following format to alter the id and add a background-image.
 
 We will be starting with this:
 ```
