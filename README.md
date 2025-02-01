@@ -242,8 +242,7 @@ In our case though, we will not be using the blur-radius value, so we will omit 
 
 All in all, our `text-shadow` property should include values for our offset-x, offset-y, and color as follows: 1px 2px #463903.
 
-
-With these properties in mind, inside our `splash-text` ID selector should be:
+With these properties in mind, inside our 'splash-text' ID selector should be:
 ```
 #splash_text {
   font-family: 'minecraftregular', sans-serif;
