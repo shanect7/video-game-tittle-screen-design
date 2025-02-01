@@ -195,7 +195,7 @@ Within our CSS, you should type out the following: (ideally, under the code you 
 }
 ```
 
-(For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
+(For more information on @font-face, consider this [website](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).
 
 Following that, with the use of the "splash_text" ID, we will now apply this custom font to our text, as shown below: 
 ```
@@ -207,7 +207,7 @@ Following that, with the use of the "splash_text" ID, we will now apply this cus
 As you can see there, a comma placed in between our custom font and sans-serif. We do this in order to have a backup font in case our custom font doesn't work. Like a list, the displayed font prioritizes from first to last font (left to right in this case). If the first font fails to display, it will move on to the font on its right. 
 
 With that now completed, we will now focus on the size of this font. In order to change the size of this text, we will now use `font-size` which is based on pixels. In this case, we will set the size of the font to **30 pixels**.
-[More info. on font-size here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
+[More info. on font-size here](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size).
 
 With that in mind, your code should look like this:
 ```
